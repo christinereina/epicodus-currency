@@ -1,5 +1,5 @@
-export class WeatherService {
-  async getWeatherByCity(city) {
+export class currencyExchanger {
+  async getCurrency() {
     try {
       let response = await fetch(`https://prime.exchangerate-api.com/v5/${process.env.API_KEY}`);
       let jsonifiedResponse;
@@ -9,7 +9,7 @@ export class WeatherService {
         jsonifiedResponse = false;
       }
       return jsonifiedResponse;
-    } catch {
+    } catch (error) {
       return false;
     }
   }
