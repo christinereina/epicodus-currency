@@ -22,10 +22,11 @@ Current Age
 | Behavior       | Input         | Output  |
 | ------------- |:-------------:| -----:|
 | User enters an amount in US dollars | $1000 | current exchange rate is shown |
+| User enters 0 or letters | ex. "0", "money" | Error message is returned, "There was an error handling your request. Please enter a number." |
 
 ## Known Bugs
 
-n/a
+As os 5/5 exchanger still needs error message if not a number or 0
 
 ## Support and contact details
 
