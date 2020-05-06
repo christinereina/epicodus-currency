@@ -16,8 +16,10 @@ $(document).ready(function() {
     })();
 
     function getConversion(response) {
-      if (convertCurrency === "AED") {
-        $('#output').text(`Your USD ${amount} is ${response.conversion_rates.AED} Dirham 🇦🇪 `);
+      if  (amount === NaN ) {
+        $('#output').text(`There was an error handling your request. Please enter a number.`);
+      } else if (convertCurrency === "AED") {
+        $('#output').text(`Your USD ${amount} is ${response.conversion_rates.AED*amount} Dirham 🇦🇪 `);
        } else if (convertCurrency === "ARS") {
           $('#output').text(`Your USD ${amount} is ${response.conversion_rates.ARS} Peso 🇦🇷`);
         } else if (convertCurrency === "AUD") {
@@ -28,8 +30,6 @@ $(document).ready(function() {
           $('#output').text(`Your USD ${amount} is ${response.conversion_rates.BRL} Real🇧🇷 `);
         } else if (convertCurrency === "BSD") {
           $('#output').text(`Your USD ${amount} is ${response.conversion_rates.BSD} Dollar 🇧🇸`);
-      } else if (convertCurrency === "NaN") {
-        $('#output').text(`There was an error handling your request.`);
       }
    }
   });
