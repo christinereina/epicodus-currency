@@ -17,18 +17,18 @@ $(document).ready(function() {
 
     function getConversion(response) {
       if (convertCurrency === "AED") {
-        $('#output').text(`Your USD ${amount} is ${response.conversion_rates.AED}`);
+        $('#output').text(`Your USD ${amount} is ${response.conversion_rates.AED} Dirham 🇦🇪 `);
        } else if (convertCurrency === "ARS") {
-          $('#output').text(`Your USD ${amount} is ${response.conversion_rates.ARS}`);
+          $('#output').text(`Your USD ${amount} is ${response.conversion_rates.ARS} Peso 🇦🇷`);
         } else if (convertCurrency === "AUD") {
-          $('#output').text(`Your USD ${amount} is ${response.conversion_rates.AUD}`);
+          $('#output').text(`Your USD ${amount} is ${response.conversion_rates.AUD} Dollar🇦🇺 `);
         } else if (convertCurrency === "BGN") {
-          $('#output').text(`Your USD ${amount} is ${response.conversion_rates.BGN}`);
+          $('#output').text(`Your USD ${amount} is ${response.conversion_rates.BGN} Lev 🇧🇬`);
         } else if (convertCurrency === "BRL") {
-          $('#output').text(`Your USD ${amount} is ${response.conversion_rates.BRL}`);
+          $('#output').text(`Your USD ${amount} is ${response.conversion_rates.BRL} Real🇧🇷 `);
         } else if (convertCurrency === "BSD") {
-          $('#output').text(`Your USD ${amount} is ${response.conversion_rates.BSD}`);
-      } else (convertCurrency === "NaN") {
+          $('#output').text(`Your USD ${amount} is ${response.conversion_rates.BSD} Dollar 🇧🇸`);
+      } else if (convertCurrency === "NaN") {
         $('#output').text(`There was an error handling your request.`);
       }
    }
