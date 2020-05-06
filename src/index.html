@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;800&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,300&family=Playfair+Display:ital,wght@1,400;1,900&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="main.js"></script>
   <title> $ $ $ $ $</title>
-  <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
   <h1>C U R R E N $ Y </h1>
-  <form id="exchangeRate" type="submit">
-    <h2>Enter amt in USD</h2>
-    <label for="userAmt">Enter a AMT in USD:</label>
-    <input id="userAmt" type="text">
-    <select class="form-control" id="convertAmt">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
+  <form id="form">
+    <label for="usd"><h2>Enter amt in USD</h2></label>
+    <input id="usd" type="text">
+    <select class="form-control" id="convert">
+      <option value="AED"> 🇦🇪 United Arab Emirates Dirham 🇦🇪 </option>
+      <option value="ARS"> 🇦🇷 Argentine Peso 🇦🇷 </option>
+      <option value="AUD"> 🇦🇺 Australian Dollar🇦🇺 </option>
+      <option value="BGN" >🇧🇬 Bulgarian Lev 🇧🇬 </option>
+      <option value="BRL"> 🇧🇷 Brazilian Real🇧🇷 </option>
+      <option value="BSD"> 🇧🇸 Bahamian Dollar 🇧🇸</option>
     </select>
     <button type="submit" class="btn-success">EXCHANGE!</button>
     </form>
