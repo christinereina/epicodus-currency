@@ -1,0 +1,22 @@
+h1 {
+  padding: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 75px;
+}
+
+h2 {
+  font-family: 'Poppins';
+  font-size: 40px;
+  color: aliceblue;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: greenyellow;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+
