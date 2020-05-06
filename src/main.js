@@ -14,20 +14,16 @@ $(document).ready(function() {
       console.log("Made it here.");
       let currencyExchanger = new CurrencyExchanger();
       const response = await currencyExchanger.getCurrency();
+      getConversion(response);
       console.log(response);
     })();
+
+    function getConversion(response) {
+      if (response) {
+        $('#output').text(`Your USD ${amount} is ${response.conversion_rates.AED}`);
+      } else {
+        $('#output').text(`There was an error handling your request.`);
+      }
+   }
   });
 });
-
-    
-
-//     function getConversion(response) {
-//       if (response) {
-//         return $('.ZAR').text(`The humidity in ${city} is ${response.main.humidity}%`);
-//       } else {
-//       return "error";
-//       }
-//     }
-
-//   });
-// });
