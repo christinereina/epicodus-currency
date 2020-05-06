@@ -6,7 +6,7 @@
 
 ## Description
 
-This is a currency exchanger! The user will be able to type in an amount in U.S. dollars and then choose which currency it should be converted to (such as francs, marks, rupees, and so on). 
+This is a currency exchanger! The user will be able to type in an amount in U.S. dollars and then choose which currency it should be converted to. Chose from six different currencies: United Arab Emirates Dirham, Argentine Peso, Australian Dollar,  Bulgarian Lev, Brazilian Real, Bahamian Dollar. 
 
 ## Setup/Installation Requirements
 
@@ -21,11 +21,11 @@ Current Age
 
 | Behavior       | Input         | Output  |
 | ------------- |:-------------:| -----:|
-| User enters an amount in US dollars | $1000 | Exchange rate is shown |
+| User enters an amount in US dollars | $1000 | current exchange rate is shown |
 
 ## Known Bugs
 
-not functional as of 4/29
+n/a
 
 ## Support and contact details
 
