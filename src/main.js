@@ -1,26 +1,33 @@
 import $ from "jquery";
-import { CurrencyExchanger } from "./exchanger";
+import "./styles.css";
+import { CurrencyExchanger } from "./../src/exchanger.js";
 
 $(document).ready(function() {
-  $('#exchangeRate').submit(function() {
+
+  $('#form').submit(function(event) {
     event.preventDefault();
-    let userUSD = $('#userAmt').val();
-    let convert = $('#convertAmt').val();
+    const amount = $("#usd").val();
+    console.log(amount);
+    const convertCurrency = $("#convert").val();
 
-(async () => {
-  let exchangeService = new exchangeService();
-  const response = await exchangeService.getExchangeRate();
-  getElements(response);
-  console.log(response);
-})();
-
-// function getElements (response) {
-//   if (response) {
-//     )
-//   } else {
-
-//   }
-// }
-
+    (async () => {
+      console.log("Made it here.");
+      let currencyExchanger = new CurrencyExchanger();
+      const response = await currencyExchanger.getCurrency();
+      console.log(response);
+    })();
+  });
 });
-});
+
+    
+
+//     function getConversion(response) {
+//       if (response) {
+//         return $('.ZAR').text(`The humidity in ${city} is ${response.main.humidity}%`);
+//       } else {
+//       return "error";
+//       }
+//     }
+
+//   });
+// });
