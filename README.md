@@ -1,4 +1,4 @@
-# [Curren$y Exchanger](https://github.com/christinereina/epicodus-currency_exchanger.git)
+# [Curren$y Exchanger](https://github.com/christinereina/epicodus-currency)
 
 #### Epicodus Week Six Independent Project, Asynchrony and APIs | Currency Exchanger, 04.24.2020
 
@@ -11,7 +11,7 @@ This is a currency exchanger! The user will be able to type in an amount in U.S.
 ## Setup/Installation Requirements
 
 * Clone or download from Github Repository 
-https://github.com/christinereina/epicodus-currency_exchanger.git
+https://github.com/christinereina/epicodus-currency
 * Create the webpack bundled /dist directory by running the terminal command "npm install" in the root directory.
 * Open /dist/index.html in your preferred internet browser.
 
