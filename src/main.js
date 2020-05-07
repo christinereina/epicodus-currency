@@ -17,7 +17,7 @@ $(document).ready(function() {
 
     function getConversion(response) {
       if (convertCurrency === "AED") {
-        $('#output').text(`Your USD ${amount} is ${(response.conversion_rates.AED*amount).toFixed(2)} Dirham 🇦🇪 `);
+        $('#output').text(`Your USD ${amount} is ${(response.conversion_rates.AED*amount).toFixed(2)} Dirham 🇦🇪`);
        } else if (convertCurrency === "ARS") {
           $('#output').text(`Your USD ${amount} is ${(response.conversion_rates.ARS*amount).toFixed(2)} Peso 🇦🇷`);
         } else if (convertCurrency === "AUD") {
@@ -25,10 +25,10 @@ $(document).ready(function() {
         } else if (convertCurrency === "BGN") {
           $('#output').text(`Your USD ${amount} is ${(response.conversion_rates.BGN*amount).toFixed(2)} Lev 🇧🇬`);
         } else if (convertCurrency === "BRL") {
-          $('#output').text(`Your USD ${amount} is ${(response.conversion_rates.BRL*amount).toFixed(2)} Real🇧🇷 `);
+          $('#output').text(`Your USD ${amount} is ${(response.conversion_rates.BRL*amount).toFixed(2)} Real🇧🇷`);
         } else if (convertCurrency === "BSD") {
           $('#output').text(`Your USD ${amount} is ${(response.conversion_rates.BSD*amount).toFixed(2)} Dollar 🇧🇸`);
-        } else (typeof(response) === "string") {
+        } else if (typeof(response) === "string") {
             $("#output").html(response);
           } 
         }
