@@ -28,7 +28,9 @@ $(document).ready(function() {
           $('#output').text(`Your USD ${amount} is ${(response.conversion_rates.BRL*amount).toFixed(2)} Real🇧🇷 `);
         } else if (convertCurrency === "BSD") {
           $('#output').text(`Your USD ${amount} is ${(response.conversion_rates.BSD*amount).toFixed(2)} Dollar 🇧🇸`);
-      }
-   }
+        } else (typeof(response) === "string") {
+            $("#output").html(response);
+          } 
+        }
   });
 });
