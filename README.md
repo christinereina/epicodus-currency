@@ -15,9 +15,7 @@ https://github.com/christinereina/epicodus-currency
 * Create the webpack bundled /dist directory by running the terminal command "npm install" in the root directory.
 * Open /dist/index.html in your preferred internet browser.
 
-## Setup/Installation Requirements
-
-Current Age
+## Specifications
 
 | Behavior       | Input         | Output  |
 | ------------- |:-------------:| -----:|
