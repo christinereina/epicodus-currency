@@ -16,7 +16,9 @@ $(document).ready(function() {
     })();
 
     function getConversion(response) {
-      if (convertCurrency === "AED") {
+      if (response.result === "error") {
+        $("#output").text(`Looks like you need a fresh API! -- Get one HERE: https://www.exchangerate-api.com/`);
+       } else if(convertCurrency === "AED") {
         $('#output').text(`Your USD ${amount} is ${(response.conversion_rates.AED*amount).toFixed(2)} Dirham 🇦🇪`);
        } else if (convertCurrency === "ARS") {
           $('#output').text(`Your USD ${amount} is ${(response.conversion_rates.ARS*amount).toFixed(2)} Peso 🇦🇷`);
@@ -28,8 +30,8 @@ $(document).ready(function() {
           $('#output').text(`Your USD ${amount} is ${(response.conversion_rates.BRL*amount).toFixed(2)} Real🇧🇷`);
         } else if (convertCurrency === "BSD") {
           $('#output').text(`Your USD ${amount} is ${(response.conversion_rates.BSD*amount).toFixed(2)} Dollar 🇧🇸`);
-        } else if (typeof(response) === "string") {
-            $("#output").html(response);
+        } else {
+            $("#output").text(`Please check your inputs and try again!`);
           } 
         }
   });
